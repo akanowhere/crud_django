@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Materiallize</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Materialize css link-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <!--Materialize css local-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/materialize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+      /* aqui mostra onde é a div onde o efeito está jogado */
+        .nav-wrapper {
+          background-color: #374899;
+          padding: 20px;
+          text-align: center;
+          color: white;
+          box-shadow: 0px 0px 30px 2px #fff; /* Adiciona um brilho usando box-shadow */
+        }
+    </style>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+ /* aqui mostra onde é a div onde o efeito está jogado */
+    .page-footer {
+      background-color: #374899;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brightness-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 20px; /* Ajuste conforme necessário para a altura do brilho */
+      background-color: white; /* Cor de fundo da sobreposição */
+      opacity: 0.2; /* Ajuste a opacidade para controlar o brilho */
+    }
+
+    .container {
+      color: white;
+      text-align: left;
+      padding: 0px;
+    }
+
+    .row {
+      margin-bottom: 0; /* Evita margem inferior extra na row */
+
+    }
+
+    .page-footer {
+      background-color: #374899;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      box-shadow: 0px 0px 30px 2px #fff; /* Adiciona um brilho usando box-shadow */
+    }
+  </style>
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=10.0">
+  <title>Parallax Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<style>
+    .parallax-container {
+      height: 400px; /* Substitua "400px" pela altura desejada */
+    }
+</style>
+
+<style>
+  /* Adicione estilos personalizados para as imagens do slider aqui */
+  .slides img {
+    /* Adicione estilos CSS conforme necessário */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */ em %
+    border-radius: 0px; /* Adiciona cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra à imagem */
+    filter: brightness(60%);
+  }
+</style>
+
+
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+
+    <!-- Inclusão da folha de estilo CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Inclusão da folha de estilo personalizada -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+
+    <!-- Se você tiver scripts JavaScript, você pode incluí-los assim -->
+    <!-- Inclusão dos scripts do Bootstrap (jQuery e Popper.js são pré-requisitos) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="navbar-fixed">
+<nav>
+      <div class="nav-wrapper"  style="background-color: #374899;height: 90px;">
+
+            <a href="#">
+             <img class="stnd default-logo" alt="" src="/static/img/logo.jpeg" style="height: 70px; position: relative; top: -10px; left: -870px;">
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-left: 20px;">
+              <li style="position: absolute; top: 10px;left: 1430px;"><a href="Parceiros.html" style="font-weight: bold;">PARCEIROS</a></li>
+              <li style="position: absolute; top: 10px;left: 1570px;"><a href="Quem.html" style="font-weight: bold;">QUEM SOMOS</a></li>
+              <li style="position: absolute; top: 10px;left: 1730px;"><a href="Contato.html" style="font-weight: bold;">CONTATO</a></li>
+            </ul>
+      </div>
+</nav>
+</div>
+ <!--<div>
+<img src="{% static 'img/fundo.jpg' %}" class="responsive-img" id="imagem" style="width: 2000px; height: 1400px; display: block; border: none; margin: 0; padding: 0;">
+<script> const imagem = document.getElementById('imagem'); imagem.style.filter = 'brightness(2.0)'; // Ajuste o valor conforme necessário</script>
+</div> -->
+
+<div class="slider">
+<ul class="slides">
+  <li>
+    <img src="{% static 'img/img1.jpeg' %}" > <!-- random image -->
+    <div class="caption center-align">
+      <h3>Análise de Dados</h3>
+      <h5 class="light grey-text text-lighten-5">É o processo de examinar, limpar, transformar e modelar conjuntos de dados para descobrir informações úteis, padrões e tendências.</h5>
+    </div>
+  </li>
+  <li>
+    <img src="{% static 'img/img2.jpeg' %}"> <!-- random image -->
+    <div class="caption left-align">
+      <h3>Engenharia de Dados</h3>
+      <h5 class="light grey-text text-lighten-5">Área  que se dedica a coletar, organizar e processar grandes volumes de dados para obter insights e tomar decisões informadas.</h5>
+    </div>
+  </li>
+  <li>
+    <img src="{% static 'img/img3.jpeg' %}"> <!-- random image -->
+    <div class="caption right-align">
+      <h3>Ciência de Dados</h3>
+      <h5 class="light grey-text text-lighten-5"> Área que utiliza técnicas estatísticas e de programação para extrair insights e conhecimento a partir de grandes volumes de dados.</h5>
+    </div>
+  </li>
+</ul>
+</div>
+
+
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="{% static 'img/fundo.jpg' %}" class="responsive-img" id="imagem" style="2000px; height: height: 1400px;">
+  </div>
+</div>
+
+<footer class="page-footer"  style="background-color: #374899;">
+  <div class="container" style="margin-bottom: -20px;">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text"></h5>
+        <p class="grey-text text-lighten-4">Especialistas em Dados</p>
+      </div>
+      <div class="col l4 offset-l12 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Sobre Nós</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Produtos</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Localização</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Links</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+   <div class="footer-copyright" style="background-color: #374899; font-size: 14px; padding-top: 0px; padding-left: 0px">
+        <div class="container" style="font-size: 14px; padding-top: 0px; padding-left: -10px">
+         © 2023 JP&Souza Engenharia de Dados
+        </div>
+   </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="{% static 'js/materialize.js' %}"></script>
+<script>
+
+$(document).ready(function() {
+  $('.slider').slider({
+    indicators: false,
+    height: 1000,
+    duration: 1000,
+    interval: 2500
+  });
+});
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems);
+  });
+</script>
+</body>
+</html>
+
+

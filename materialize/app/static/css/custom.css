@@ -1,0 +1,7 @@
+html {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-weight: 900; /* 10 é um valor muito alto para font-weight, você provavelmente queria usar um valor entre 100 e 900. 400 é o valor padrão que é geralmente equivalente a "normal" e 700 é geralmente equivalente a "negrito". */
+}

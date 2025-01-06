@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Materiallize</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Materialize css link-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <!--Materialize css local-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/materialize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+</head>
+
+
+
+
+
+<body>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+<!-- Navbar Right-left Aligned Links Active Items Extended Navbar with Tabs-->
+<div class="navbar-fixed">
+<nav class="nav-extended">
+<div class="nav-wrapper">
+  <a href="#" class="brand-logo center"> <i class="material-icons">book</i>Logo</a>
+  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">JavaScript</a></li>
+  </ul>
+</div>
+<div class="nav-content">
+  <ul class="tabs tabs-transparent">
+    <li class="tab"><a href="#test1">Test 1</a></li>
+    <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+    <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+    <li class="tab"><a href="#test4">Test 4</a></li>
+  </ul>
+</div>
+</nav>
+</div>
+
+<ul class="sidenav" id="mobile-demo">
+<li><a href="sass.html">Sass</a></li>
+<li><a href="badges.html">Components</a></li>
+<li><a href="collapsible.html">JavaScript</a></li>
+</ul>
+
+<div id="test1" class="col s12">Test 1</div>
+<div id="test2" class="col s12">Test 2</div>
+<div id="test3" class="col s12">Test 3</div>
+<div id="test4" class="col s12">Test 4</div>
+
+<!-- Navbar Right-left Aligned Links Active Items-->
+
+<nav>
+<div class="nav-wrapper">
+  <a href="#!" class="brand-logo center">Logo</a>
+  <ul class="left hide-on-med-and-down">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li class="active"><a href="collapsible.html">JavaScript</a></li>
+  </ul>
+</div>
+</nav>
+
+<!-- Navbar Right-left Aligned Links-->
+
+ <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+ </nav>
+
+
+  <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="preloader-wrapper small active">
+    <div class="spinner-layer spinner-green-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+<!-- Components Preloader Linear Indeterminate-->
+
+<div class="progress">
+  <div class="indeterminate"></div>
+</div>
+
+<!-- Components Preloader Linear Determinate-->
+<div class="progress">
+      <div class="determinate red" style="width: 70%"></div>
+</div>
+
+<!-- Components badges Badges in options-->
+<span class="new badge red" data-badge-caption="custom caption">4</span>
+<span class="badge blue" data-badge-caption="custom caption">4</span>
+
+
+<!-- Components badges Badges in collapses-->
+
+<ul class="collapsible">
+  <li>
+    <div class="collapsible-header">
+      <i class="material-icons">filter_drama</i>
+      First
+      <span class="new badge">4</span></div>
+    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <i class="material-icons">place</i>
+      Second
+      <span class="badge">1</span></div>
+    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+  </li>
+</ul>
+<!-- Components badges Badges in navbar-->
+<nav>
+  <div class="nav-wrapper">
+    <a href="" class="brand-logo">Logo</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="">sass</a></li>
+      <li><a href="">sass <span class="new badge">4</span></a></li>
+      <li><a href="">sass</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Components badges Badges in Dropdown-->
+<ul id="dropdown2" class="dropdown-content">
+    <li><a href="#!">one<span class="badge">1</span></a></li>
+    <li><a href="#!">two<span class="new badge">1</span></a></li>
+    <li><a href="#!">three</a></li>
+</ul>
+<a class="btn dropdown-trigger" href="#!" data-target="dropdown2">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+<!-- Components badges Collections-->
+
+<div class="collection">
+    <a href="#!" class="collection-item"><span class="badge">1</span>Alan</a>
+    <a href="#!" class="collection-item"><span class="new badge">4</span>Alan</a>
+    <a href="#!" class="collection-item">Alan</a>
+    <a href="#!" class="collection-item"><span class="badge">14</span>Alan</a>
+</div>
+
+<!-- Components Collections Avatar Content-->
+
+<ul class="collection">
+    <li class="collection-item avatar">
+      <img src="images/yuna.jpg" alt="" class="circle">
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">folder</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+</ul>
+<!-- Components Collections  Secondary content-->
+<ul class="collection with-header">
+    <li class="collection-header"><h4>First Names</h4></li>
+    <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+    <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+    <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+    <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+</ul>
+
+<!-- Components Collections Links-->
+
+<div class="collection">
+    <a href="#!" class="collection-item">Alvin</a>
+    <a href="#!" class="collection-item active">Alvin</a>
+    <a href="#!" class="collection-item">Alvin</a>
+    <a href="#!" class="collection-item">Alvin</a>
+</div>
+<!-- Components Collections Basic-->
+<ul class="collection">
+  <li class="collection-item">Alvin</li>
+  <li class="collection-item">Alvin</li>
+  <li class="collection-item">Alvin</li>
+  <li class="collection-item">Alvin</li>
+</ul>
+<!-- Components fixed actions buttons -->
+<script src="{% static 'js/materialize.min.js' %}"></script>
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red">
+    <i class="large material-icons">mode_edit</i>
+  </a>
+  <ul>
+    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+  </ul>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.fixed-action-btn');
+      var options = { direction: 'left', hoverEnabled: false, toolbarEnabled: false}; // Adicione opções se necessário
+      var instances = M.FloatingActionButton.init(elems, options);
+    });
+</script>
+<!--components buttons para formulário -->
+<button type="submit" name="action" class="waves-effect waves-light btn-small">Enviar<i class="material-icons right">send</i></button>
+
+<!--components buttons disable -->
+<a class="btn-large disabled">Button</a>
+<a class="btn disabled">Button</a>
+<a class="btn-flat disabled">Button</a>
+<a class="btn-floating disabled"><i class="material-icons">add</i></a>
+<!--components buttons small -->
+<a class="waves-effect waves-light btn-small">Button</a>
+<a class="waves-effect waves-light btn-small"><i class="material-icons left">book</i>button</a>
+<a class="waves-effect waves-light btn-small"><i class="material-icons right">cloud</i>button</a>
+<!--components buttons large -->
+<a class="waves-effect waves-light btn-large">Button</a>
+<a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
+<a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>
+<!--components buttons subimit -->
+<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+</button>
+<!--components buttons flat -->
+<a class="waves-effect waves-teal btn-flat">Button</a>
+<!--components buttons floating -->
+<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+<!--components buttons Raised -->
+<a class="btn red">button</a>
+<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+<a class="waves-effect waves-light btn"><i class="material-icons right">face</i>button</a>
+
+<!--components pagiantion Basic -->
+<!-- -->
+<ul class="pagination">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+</ul>
+
+<!--components Breadcrumbs Basic -->
+<!-- -->
+<nav>
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="#!" class="breadcrumb">First</a>
+        <a href="#!" class="breadcrumb">Second</a>
+        <a href="#!" class="breadcrumb">Third</a>
+      </div>
+    </div>
+</nav>
+
+<nav blue>
+    <div class="nav-wrapper container">
+      <div class="col s12">
+        <a href="#!" class="breadcrumb">First</a>
+        <a href="#!" class="breadcrumb">Second</a>
+        <a href="#!" class="breadcrumb">Third</a>
+      </div>
+    </div>
+</nav>
+
+
+<!--components icons Usage -->
+<!--pesquisar google icons para mais icons -->
+<i class="material-icons large">add</i>
+<i class="material-icons large">account_box</i>
+<i class="material-icons large">call_to_action</i>
+<!--helpers hover -->
+<!--helpers hover cria um sombra no card -->
+<div class="card-panel hoverable"> Hoverable Card Panel</div>
+<!--helpers Formatting -->
+<!--Nao deixa o texto quebrar gerando retisciências -->
+<h4 class="truncate">This is an extremely long title that will be truncated</h4>
+
+<!--helpers Hiding/Showing Content-->
+<!--a linha row hide-on-small-only esconderá essa div apenas para celular hide-on-small-only  -->
+<div class="row hide-on-small-only">
+    <div class="col s6 red left">RED</div>
+    <div class="col s6 blue right">BLUE</div>
+</div>
+
+
+<!--helpers aligment float-->
+<div class="row">
+    <div class="col s6 red left">RED</div>
+    <div class="col s6 blue right">BLUE</div>
+</div>
+<!--helpers aligment -->
+<div class="valign-wrapper red">
+    <h5>This should be vertically aligned</h5>
+</div>
+<!--helpers aligment -->
+<div>
+    <h5 class="left-align blue">This should be left aligned</h5>
+</div>
+<div>
+    <h5 class="right-align white">This should be right aligned black </h5>
+</div>
+<div>
+    <h5 class="center-align yellow">This should be center aligned</h5>
+</div>
+
+
+<!--grid2-->
+<div class="row">
+  <div class="col s12 orange push-s2">This div is 12-columns wide on all screen sizes</div>
+  <div class="col s6 orange offset-s1">6-columns (one-half)</div>
+  <div class="col s6 orange offset-s1">6-columns (one-half)</div>
+</div>
+<!--grid-->
+ <div class="row">
+      <div class="col s1 red">You’ve already learned how to use the command-line interface to do some things. This chapter documents all the available commands.
+          To get help from the command-line, simply call poetry to see the complete list of commands, then --help combined with any of those can give you more information.</div>
+      <div class="col s3 blue">2</div>
+      <div class="col l1 pink">3</div>
+      <div class="col m1 green">4</div>
+      <div class="col l4 purple">5</div>
+    </div>
+<!--grid-->
+ <div class="row container">
+      <div class="col s1 red">You’ve already learned how to use the command-line interface to do some things. This chapter documents all the available commands.
+          To get help from the command-line, simply call poetry to see the complete list of commands, then --help combined with any of those can give you more information.</div>
+      <div class="col s3 blue">2</div>
+      <div class="col l1 pink">3</div>
+      <div class="col m1 green">4</div>
+      <div class="col l4 purple">5</div>
+    </div>
+<!--tabela-->
+ <table class="striped">
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+<!--imagem-->
+<img src="{% static 'img/guitar01.jpg' %}" class="responsive-img circle">
+<!--cor e filtro do card-->
+<!--<div class="card-panel blue-grey white-text text-lighten-4">Olá Mundo!!!!!</div>-->
+<!--cor e filtro e sombra do card-->
+<div class="card-panel blue-grey z-depth-5">Olá Mundo!!!!!</div>
+<!--video-->
+<div class="responsive-video">
+<iframe width="640" height="240" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="card-panel blue-grey"> <p> A MemoryError means that the interpreter has run out of memory to allocate to your Python program. This may be due to an issue in the setup of the Python environment or it may be a concern with the code itself loading too much data at the same time </p> </div>
+<!--texto responsivo-->
+<p class="flow-text">I am Flow Text</p>
+<h1>Heading H1</h1>
+<h2>Heading H2</h2>
+<h3>Heading H3</h3>
+<h4>Heading H4</h4>
+<h5>Heading H5</h5>
+<h6>Heading H6</h6>
+<!--blockquote-->
+<blockquote>This is an example quotation that uses the blockquote tag.</blockquote>
+
+<!--css pulse-->
+<a class="btn-floating pulse"><i class="material-icons">menu</i></a>
+<a class="btn-floating btn-large pulse"><i class="material-icons">cloud</i></a>
+<a class="btn-floating btn-large cyan pulse"><i class="material-icons">edit</i></a>
+
+<!--jquery-->
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<!--materialize js-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+<!--materialize local-->
+<script src="{% static 'js/materialize.js' %}"></script>
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+
+
+</body>
+</html>
